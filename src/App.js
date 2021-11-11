@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './styles/main/style.css';
+import { Header } from './components/Header';
+import { Banner } from './components/Banner';
+import { KnowledgeContainer } from './container/knowledgeContainer';
+import { ProjectsContainer } from './container/projectsContainer';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { Loader } from './components/Loader';
 
-function App() {
+function Home() {
+
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {
+        isLoading ? <Loader /> :
+        <>
+        <Header />
+        <Banner />
+        <KnowledgeContainer />
+        <ProjectsContainer />
+        <Contact />
+        <Footer />
+        </>
+      }
+    </>
   );
 }
 
-export default App;
+export default Home;

@@ -1,0 +1,115 @@
+.main__banner {
+  padding: 10px;
+  @include svgOrangeBackground();
+  &--presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    & .img--wrapper {
+      top: 4px;
+      position: relative;
+      width: 152px;
+      height: 152px;
+      margin-bottom: 25px;
+      border-radius: 100px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+      z-index: 2;
+      overflow: hidden;
+      & img {
+        position: absolute;
+        left: -26%;
+        top: -8%;
+        width: 155px;
+        height: 200px;
+        transform: translate(25%, -5%);
+        animation-name: appear;
+        animation-duration: 5s;
+      }
+    }
+    & .img--circle {
+      position: absolute;
+      top: 0;
+      width: 160px;
+      height: 160px;
+      background: #4b6cb7;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      animation-name: spin;
+      animation-duration: 2s;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      border: 5px solid #a9a9a9;
+      border-top-color:  #a9d161;
+      z-index: 1;
+    }
+    & h1, & h2 {
+      font-family: $Fuente2;
+      text-shadow: 2px 2px 5px #000000;
+      margin-bottom: 15px;
+    }
+    & h1 {
+      width: 150px;
+      font-size: $MainHeader;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    & h2 {
+      font-size: $SecondaryHeader;
+    }
+  }
+  &--cv {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: $Paragraph;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    min-width: 130px;
+    height: 40px;
+    color: #e5e5e5;
+    text-shadow: 2px 2px 3px #000000;
+    padding: 8px 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #212529;
+  }
+  &--cv:hover svg {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  @include media(tablet) {
+    &--presentation {
+      max-width: 800px;
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
