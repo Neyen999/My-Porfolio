@@ -439,6 +439,8 @@ canvas {
 
 .plans .heading__lvl--two {
   margin: 50px;
+  width: 100%;
+  text-align: center;
 }
 
 .plans__container {
@@ -454,6 +456,7 @@ canvas {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
+    place-items: center;
   }
 }
 
