@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Knowledge } from './Knowledge'
 import { IoLogoVercel } from 'react-icons/io5' 
 import { SiStyledcomponents } from 'react-icons/si'
@@ -7,7 +7,6 @@ import { GrGraphQl } from 'react-icons/gr'
 
 export const Projects = ({ slides }) => {
 
-  const [current, setCurrent] = useState();
 
   if(!Array.isArray(slides) || slides.length <= 0) {
     return null
@@ -18,9 +17,7 @@ export const Projects = ({ slides }) => {
 
       {slides.map((slide, index) => {
         return (
-          <div key={index} className="plans--description one" onClick={() => {
-            setCurrent(index)
-          }}>
+          <div key={index} className="plans--description one" >
             <img src={slide.image} alt={slide.name} />
             <div className="card--info">
               <h2>{slide.name}</h2>
