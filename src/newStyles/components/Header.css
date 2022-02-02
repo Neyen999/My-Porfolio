@@ -1,0 +1,11 @@
+.header {
+  padding: 10px 10px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+}
+
+.header a {
+  font-size: 3rem;
+  color: #0f0f0f;
+}

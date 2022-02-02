@@ -5,9 +5,9 @@ export const SliderData = [
     anchor: "https://neyen999.github.io/batatacoin/",
     repository: "https://github.com/Neyen999/batatacoin",
     usedTech: [
-      "html5",
-      "css3-alt",
-      "js"
+      "html",
+      "css",
+      "javascript"
     ]
   },
   {
@@ -16,9 +16,9 @@ export const SliderData = [
     anchor: "https://neyen999.github.io/frontendmentor--crowfound/",
     repository: "https://github.com/Neyen999/frontendmentor--crowfound",
     usedTech: [
-      "html5",
-      "css3-alt",
-      "js"
+      "html",
+      "css",
+      "javascript"
     ]
   },
   {
@@ -27,7 +27,7 @@ export const SliderData = [
     anchor: "https://petgram-tan-eta.vercel.app/",
     repository: "https://github.com/Neyen999/petgram",
     usedTech: [
-      "js",
+      "javascript",
       "react",
       "vercel",
       "gql",
@@ -40,9 +40,9 @@ export const SliderData = [
     anchor: "https://neyen999.github.io/url-shortener/",
     repository: "https://github.com/Neyen999/url-shortener",
     usedTech: [
-      "html5",
-      "css3-alt",
-      "js",
+      "html",
+      "css",
+      "javascript",
       "react"
     ]
   }
