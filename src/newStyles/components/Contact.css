@@ -3,18 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #6d35d4; */
-  /* background-color: #060606; */
-  /* background: url('https://hdwallpaperim.com/wp-content/uploads/2017/08/24/113377-HTML-programming-code-blue-simplicity.jpg')center center/cover no-repeat; */
   background: linear-gradient(45deg, #6d35d4, #060606);
-  /* background-color: #f8f8f8; */
-}
-
-
-.whyme {
-  background-color: #333;
-  height: 100%;
-  width: 50vw;
 }
 
 .formcontainer {
@@ -27,18 +16,12 @@
   justify-content: center;
 }
 
-.formcontainer h3 {
-  color: #fff;
-  font-size: 3rem;
-  margin-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
-}
-
 form {
   background-color: #fff;
   padding: 26px 24px;
   border-radius: 8px;
-  width: 50%;
+  width: 90%;
+  max-width: 500px;
   height: auto;
   max-height: 600px;
   max-width: 500px;
@@ -83,17 +66,13 @@ input, textarea {
 }
 
 textarea {
-  /* border: 1px solid  rgba(128, 128, 128, 0.295); */
   border: 1px solid  #6d35d45d;
   font-family: 'Open sans', sans-serif;
 }
 
 input {
   height: 60px;
-  /* border: 1px solid rgba(128, 128, 128, 0.295); */
   border: 1px solid #6d35d45d;
-  /* border-radius: 8px; */
-  /* padding: 5px 7px; */
 }
 
 input[type='submit'] {

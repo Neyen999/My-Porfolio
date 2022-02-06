@@ -1,41 +1,26 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { PictureGrid } from './PictureGrid'
 import { FcDownload } from 'react-icons/fc'
 import { FaReact } from 'react-icons/fa'
 import { SiRedux, SiStyledcomponents, SiTypescript, SiWebpack, SiBabel } from 'react-icons/si'
 import '../newStyles/components/Banner.css'
-
-
-const image = new Image();
-let imageUrl = "https://i.postimg.cc/pTrprFYH/Whats-App-Image-2021-09-13-at-14-49-25-Photo-Room.png";
-
+import '../newStyles/components/Information.css'
 
 export const Banner = () => {
 
-  useEffect(() => {
-    image.onload = function() {
-      document.getElementById("image");
-    }
-
-    image.src = imageUrl;
-
-  }, [])
-
   return (
     <section className="banner">
-      <div className="presentation">
-        <div className="presentation__info">
+      <div className="banner__presentation">
+        <div>
         <h3>Desarrollador Frontend</h3>
         <h1>Neyen E.<br/> Marinelli</h1>
         <a href="#about">Más sobre mi <span><i className="fas fa-chevron-down"></i></span></a>
         </div>
       </div>
-      <div className="information">
+      <PictureGrid>
         <FaReact className='react'/>
         <SiRedux className='redux'/>
         <SiStyledcomponents className='styled'/>
-        <picture>
-          <img src={imageUrl} alt="Neyen Marinelli"/>
-        </picture>
         <SiTypescript className='types'/>
         <SiWebpack className='webpack'/>
         <SiBabel className='babel'/>
@@ -43,7 +28,7 @@ export const Banner = () => {
           Descargar CV
           <FcDownload />
         </a>
-      </div>
+      </PictureGrid>
     </section>
   )
 };

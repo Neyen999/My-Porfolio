@@ -1,12 +1,9 @@
 import React from 'react';
 import '../newStyles/components/Contact.css'
-import svg1 from '../assets/Dropdown menu-bro.png'
-import svg2 from '../assets/All the data-bro.png'
 
 export const Contact = () => {
   return (
     <section className="contact">
-      {/* <img src={svg1} alt="" /> */}
       <div className="formcontainer">
         <form id="fs-frm" name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/xbjqrygb" method="post">
           <p>¿Querés que trabajemos juntos? <br/><strong>Contactame!</strong></p>
@@ -22,7 +19,6 @@ export const Contact = () => {
           <input type="submit" value="Enviar" />
         </form>
       </div>
-      {/* <img src={svg2} alt="" /> */}
     </section>
   )
 };

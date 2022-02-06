@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import './newStyles/global.css'
 import { ProjectsContainer } from './container/projectsContainer'
-import { Header } from './components/Header'
 import { Banner } from './components/Banner'
 import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { Loader } from './components/Loader'
+import './newStyles/global.css'
 
 function Home() {
 
@@ -22,7 +21,6 @@ function Home() {
       {
         isLoading ? <Loader /> :
         <>
-        <Header />
         <Banner />
         <About />
         <ProjectsContainer />
