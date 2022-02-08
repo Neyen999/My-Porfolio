@@ -2,7 +2,7 @@ import React from 'react'
 import { ProjectDetail } from '../components/ProjectDetail'
 import '../newStyles/containers/projectContainer.css'
 import { FaReact } from 'react-icons/fa'
-import { SiRedux, SiStyledcomponents, SiTypescript, SiWebpack, SiBabel, SiGraphql } from 'react-icons/si'
+import { SiRedux, SiStyledcomponents, SiSass, SiTypescript, SiWebpack, SiBabel, SiGraphql } from 'react-icons/si'
 
 export const ProjectsContainer = () => {
   const descriptions = {
@@ -64,10 +64,11 @@ export const ProjectsContainer = () => {
             projectName="URL Shortener"
             deploySite="Github Pages" 
             deploySiteUrl="https://github.com/Neyen999/url-shortener" 
-            repositoryUrl="https://github.com/Neyen999/the-aerolab-challenge"
+            repositoryUrl="https://github.com/Neyen999/url-shortener"
             description={descriptions.urlShort}
             pictureClass="shortener">
               <FaReact className='react'/> 
+              <SiSass className='sass'/>
           </ProjectDetail>
         </article>
       </div>

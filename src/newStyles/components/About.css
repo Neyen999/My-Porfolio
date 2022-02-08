@@ -138,9 +138,6 @@ b {
   .about .mydescription p {
     font-size: 1.6rem;
   }
-  /* .mystack {
-    margin-top: 50px;
-  } */
 
   .ig {
     grid-row: 3/5;
